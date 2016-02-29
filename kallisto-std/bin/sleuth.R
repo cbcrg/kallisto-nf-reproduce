@@ -1,4 +1,4 @@
-#!/users/cn/efloden/R-3.2.2/bin/Rscript
+#!/usr/bin/env Rscript
 library("sleuth")
 
 args <- commandArgs(TRUE)
@@ -12,6 +12,9 @@ kal_dirs
 s2c <- read.table(args[2], header = TRUE, stringsAsFactors=FALSE) 
 s2c <- dplyr::select(s2c, sample = run_accession, condition)
 s2c <- dplyr::mutate(s2c, path = kal_dirs)
+s2c <- s2c[order(s2c$condition), ]
+
+print(s2c)
 
 mart <- biomaRt::useMart(biomart = "ENSEMBL_MART_ENSEMBL", dataset = "hsapiens_gene_ensembl", host="www.ensembl.org")
 
@@ -25,7 +28,6 @@ so <- sleuth_wt(so, 'conditionHOXA1KD')
 
 gene_table <- sleuth_gene_table(so, test = "conditionHOXA1KD", test_type = "wt")
 
-write.table(gene_table, paste("local_uge_1_gene_table_results.txt"), sep="\t")
+write.table(gene_table, paste("gene_table_results.txt"), sep="\t")
 
 save(so, file=paste("sleuth_object.so"))
-
