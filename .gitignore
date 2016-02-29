@@ -1,4 +1,3 @@
 data/
-kallisto-nf/work
-kallisto-nf/results
-kallisto-nf/.nextflow*
+kallisto-nf/work/
+kallisto-nf/results/
