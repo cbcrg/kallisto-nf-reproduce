@@ -1,5 +1,4 @@
 data/
-kallisto-nf/.git
 kallisto-nf/work
 kallisto-nf/results
 kallisto-nf/.nextflow*
