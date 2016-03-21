@@ -1,4 +1,3 @@
 data/
-kallisto-std/uge
-kallisto-std/local
-kallisto-std/mac
+kallisto-linux/linux
+kallisto-mac/mac

@@ -7,7 +7,7 @@
 # Output Directory    = $5
 
 # Index the transcriptome
-bin/kallisto index -i $5/human_GRCh38.idx $2
+bin/$4 index -i $5/human_GRCh38.idx $2
 
 # Run Kallisto Quantification for each set of fastq files
 bin/$4 quant -i $5/human_GRCh38.idx -o $5/kallisto/SRR493366 -b 100 $1/SRR493366_1.fastq $1/SRR493366_2.fastq

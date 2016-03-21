@@ -30,4 +30,4 @@ gene_table <- sleuth_gene_table(so, test = "conditionHOXA1KD", test_type = "wt")
 
 write.table(gene_table, paste("gene_table_results.txt"), sep="\t")
 
-save(so, file=paste("sleuth_object.so"))
+
