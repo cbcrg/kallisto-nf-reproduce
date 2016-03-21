@@ -1,0 +1,3 @@
+[submodule "kallisto-nf"]
+	path = kallisto-nf
+	url = https://github.com/cbcrg/kallisto-nf
