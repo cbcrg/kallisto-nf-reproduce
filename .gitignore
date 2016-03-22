@@ -1,3 +1,5 @@
 data/
-kallisto-linux/linux
-kallisto-mac/mac
+kallisto-linux/linux/human_GRCh38.idx
+kallisto-mac/mac/human_GRCh38.idx
+
+

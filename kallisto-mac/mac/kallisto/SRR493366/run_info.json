@@ -1,0 +1,9 @@
+{
+	"n_targets": 173259,
+	"n_bootstraps": 100,
+	"n_processed": 15117833,
+	"kallisto_version": "0.42.4",
+	"index_version": 10,
+	"start_time": "Mon Mar 21 20:11:52 2016",
+	"call": "bin/kallisto_mac-v0.42.4.bin quant -i mac/human_GRCh38.idx -o mac/kallisto/SRR493366 -b 100 /Volumes/ExternalDrive2/temp/nextflow-kallisto-publication/data/raw_reads/SRR493366_1.fastq /Volumes/ExternalDrive2/temp/nextflow-kallisto-publication/data/raw_reads/SRR493366_2.fastq"
+}
