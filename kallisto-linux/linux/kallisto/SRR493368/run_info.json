@@ -1,0 +1,9 @@
+{
+	"n_targets": 173259,
+	"n_bootstraps": 100,
+	"n_processed": 21830449,
+	"kallisto_version": "0.42.4",
+	"index_version": 10,
+	"start_time": "Mon Mar 21 16:41:09 2016",
+	"call": "bin/kallisto_linux-v0.42.4.bin quant -i linux/human_GRCh38.idx -o linux/kallisto/SRR493368 -b 100 ../data/raw_reads/SRR493368_1.fastq ../data/raw_reads/SRR493368_2.fastq"
+}
