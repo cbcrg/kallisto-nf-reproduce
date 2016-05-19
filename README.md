@@ -17,6 +17,21 @@ If you have previously cloned the repository without `--recursive`, you can can 
 
 ## Data
 The same data is used across all implementations.
-* Reads: All Illumina HiSeq2000 read data can be downloaded from the NCBI SRA GEO: GSE37703.
+* Reads: All Illumina HiSeq2000 read data can be downloaded from the NCBI SRA GEO: [GSE37703](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37703).
 * Transcriptome: The transcriptome GRCh38 release 79 is available in the data directory.
 * Experiment:  The exoerimental design describing the samples within each group is availible in the data directory.
+
+## Reproduction
+
+###Nextflow Version
+
+Once the read data has been downloaded from SRA, it is possible to reproduce the Nextflow version of the pipeline using the following command from the kallisto-nf directory:
+    
+    nextflow run cbcrg/kallisto-nf --reads='../data/raw_reads/SRR4933*_{1,2}.fastq' \
+                                   --transcriptome='../data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa' \
+                                   --experiment='../data/experiment/hiseq_info.txt' \
+                                   --output='kallisto-nf-results' \
+                                   -with-docker
+
+###Traditional Version
+To reproduce the traditional bash pipeline on Mac and Linux from the respecitive directories (kallisto-linux and kallisto-mac)
