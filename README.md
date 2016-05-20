@@ -16,10 +16,16 @@ If you have previously cloned the repository without `--recursive`, you can can 
 
 
 ## Data
-The same data is used across all implementations.
+All data is availible from the original sources, as well as a compressed tarball (~22GB). To pull the data run the following command:
+    wget  http://genome.crg.es/~cnotredame/data/supp/nextflow/kallisto_data.tar.gz
+This should be extracted into a data directory within the repository eg:
+    kallisto-nf-reproduce/data/raw_reads/
+    kallisto-nf-reproduce/data/transcriptome/
+    kallisto-nf-reproduce/data/exp_info/
+
+###Original Sources
 * Reads: All Illumina HiSeq2000 read data can be downloaded from the NCBI SRA GEO: [GSE37703](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37703).
-* Transcriptome: The transcriptome GRCh38 release 79 is available in the data directory.
-* Experiment:  The exoerimental design describing the samples within each group is availible in the data directory.
+* Transcriptome: The transcriptome GRCh38 release 79 (cDNA all) is available from the kallisto website [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/).
 
 ## Reproduction
 
