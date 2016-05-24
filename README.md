@@ -16,10 +16,12 @@ All data is available from the original sources, as well as a compressed tarball
 
 To download and uncompress the data use  the following command:
 
+    mkdir data
     wget -O- http://genome.crg.es/~cnotredame/data/supp/nextflow/kallisto_data.tar.gz | tar xz -C data
 
 
 #### Original Sources
+If you wish to retrieve the data from the original sources, you can find it here:
 * Reads: All Illumina HiSeq2000 read data can be downloaded from the NCBI SRA GEO: [GSE37703](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37703).
 * Transcriptome: The transcriptome GRCh38 release 79 (cDNA all) is available from the kallisto website [here](http://bio.math.berkeley.edu/kallisto/transcriptomes/).
 
