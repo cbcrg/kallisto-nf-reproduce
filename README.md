@@ -36,7 +36,7 @@ Launch the kallisto bash pipeline script running the following command:
     ./kallisto-linux/kallisto-std.sh \
         data/raw_reads \
     	data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa  \
-      	data/experiment/hiseq_info.txt \
+      	data/exp_info/hiseq_info.txt \
       	results-linux
 
 ### Native Mac  
@@ -50,7 +50,7 @@ Launch the kallisto bash pipeline script running the following command:
     ./kallisto-mac/kallisto-std.sh \
         ../data/raw_reads \
         ../data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa  \
-        ../data/experiment/hiseq_info.txt \
+        ../data/exp_info/hiseq_info.txt \
         results-mac
 ### Nextflow (Mac & Linux)
 
@@ -69,7 +69,7 @@ Once the read data has been downloaded from SRA, it is possible to reproduce the
     nextflow run kallisto-nf \
         --reads 'data/raw_reads/SRR4933*_{1,2}.fastq' \
         --transcriptome data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa \
-        --experiment data/experiment/hiseq_info.txt \
+        --experiment data/exp_info/hiseq_info.txt \
         --output kallisto-nf-results \
         -with-docker
 
