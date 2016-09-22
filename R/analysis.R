@@ -6,7 +6,7 @@
 library(limma)
 
 # Read in the results files (NOTE: _nf <- Nextflow + Docker Executions)
-setwd(".")
+setwd("/Users/efloden/projects/kallisto-nf-reproduce/R")
 linux <- read.delim("gene_table_results_linux.txt")
 mac <- read.delim("gene_table_results_mac.txt")
 linux_nf <- read.delim("gene_table_results_linux_nf.txt")
@@ -20,13 +20,13 @@ colnames(mac_nf)<-c("ens_gene", "most_sig_transcript.mac_nf","pval.mac", "qval.m
 
 # Merge on Ensembl GeneIDs
 m1=merge(linux,mac,by="ens_gene")
-m2=merge(linux_nf,linux_nf,by="ens_gene")
+m2=merge(linux_nf,mac_nf,by="ens_gene")
 
 # Create Dataframe of q-values
 q_values<-data.frame(m1$ens_gene,m1$qval.linux, m1$qval.mac)
 colnames(q_values)<-c("ens_gene", "qval.linux", "qval.mac")
 
-q_values_nf<-data.frame(m2$ens_gene,m2qval.linux_nf,m2$qval.mac_nf)
+q_values_nf<-data.frame(m2$ens_gene,m2$qval.linux_nf,m2$qval.mac_nf)
 colnames(q_values_nf)<-c("ens_gene", "qval.linux_nf", "qval.mac_nf")
 
 
