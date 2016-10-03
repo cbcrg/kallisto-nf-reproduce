@@ -5,10 +5,10 @@ The repository contains two versions of a tradtional bash style pipeline for Mac
 
 ## Folder structure
 
-* Folder `R/`: contains 'analysis.R' script for determining the overlapping sets
-* Folder 'kallisto-linux' contains the scripts for running the native (bash), non-Nextflow verion of the pipeline on Linux
-* Folder 'kallisto-mac' contains the scripts for running the native (bash), non-Nextflow verion of the pipeline on Mac OSX
-* Folder 'kallisto-nf' contains the Nextflow version of the pipeline for running on any compatible platform
+* Folder `R`: contains the `analysis.R` script for determining the overlapping sets
+* Folder `kallisto-linux` contains the scripts for running the native (bash), non-Nextflow verion of the pipeline on Linux
+* Folder `kallisto-mac` contains the scripts for running the native (bash), non-Nextflow verion of the pipeline on Mac OSX
+* Folder `kallisto-nf` contains the Nextflow version of the pipeline for running on any compatible platform
 
 
 ## How to replicate result 
