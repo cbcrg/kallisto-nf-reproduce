@@ -48,9 +48,9 @@ Install [Sleuth](https://liorpachter.wordpress.com/2015/08/17/a-sleuth-for-rna-s
 Launch the kallisto bash pipeline script running the following command:
 
     ./kallisto-mac/kallisto-std.sh \
-        ../data/raw_reads \
-        ../data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa  \
-        ../data/exp_info/hiseq_info.txt \
+        data/raw_reads \
+        data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa  \
+        data/exp_info/hiseq_info.txt \
         results-mac
 ### Nextflow (Mac & Linux)
 
@@ -62,11 +62,11 @@ Install Docker following the instruction at [this page](https://docs.docker.com/
 
 Pull the Docker images used for this experiment (optional): 
 
-    docker pull cbcrg/kallisto-nf:1.1 
+    docker pull cbcrg/kallisto-nf@sha256:9f840127392d04c9f8e39cb72bcd62ff53cfe0492dde02dc3749bf15f1c547f1 
 
 Once the read data has been downloaded from SRA, it is possible to reproduce the Nextflow version of the pipeline from the kallisto-nf directory using the following command:
 
-    nextflow run kallisto.nf \
+    nextflow run kallisto-nf/kallisto.nf \
         --reads 'data/raw_reads/SRR4933*_{1,2}.fastq' \
         --transcriptome data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa \
         --experiment data/exp_info/hiseq_info.txt \
