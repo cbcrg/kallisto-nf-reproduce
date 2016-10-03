@@ -17,7 +17,7 @@ All data is available from the original sources, as well as a compressed tarball
 To download and uncompress the data use  the following command:
 
     mkdir data
-    wget -O- http://genome.crg.es/~cnotredame/data/supp/nextflow/kallisto_data.tar.gz | tar xz -C data
+    wget -O- https://zenodo.org/record/159158/files/kallisto_data.tar.gz | tar xz -C data
 
 
 #### Original Sources
