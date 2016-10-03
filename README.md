@@ -3,6 +3,14 @@ This repository contains the software, scripts and data to reproduce the RNA-Seq
 
 The repository contains two versions of a tradtional bash style pipeline for Mac and Linux (kallisto-mac and kallisto-linux) as well as the Nextflow version of the pipeline compatible across platforms (kallisto-nf).
 
+## Folder structure
+
+* Folder `R/`: contains 'analysis.R' script for determining the overlapping sets
+* Folder 'kallisto-linux' contains the scripts for running the native (bash), non-Nextflow verion of the pipeline on Linux
+* Folder 'kallisto-mac' contains the scripts for running the native (bash), non-Nextflow verion of the pipeline on Mac OSX
+* Folder 'kallisto-nf' contains the Nextflow version of the pipeline for running on any compatible platform
+
+
 ## How to replicate result 
 
 ### Clone the repository
