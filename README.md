@@ -43,9 +43,9 @@ Launch the kallisto bash pipeline script running the following command:
 
     ./kallisto-linux/kallisto-std.sh \
         data/raw_reads \
-    	data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa  \
-      	data/exp_info/hiseq_info.txt \
-      	results-linux
+        data/transcriptome/Homo_sapiens.GRCh38.rel79.cdna.all.fa  \
+        data/exp_info/hiseq_info.txt \
+        results-linux
 
 ### Native Mac  
 
